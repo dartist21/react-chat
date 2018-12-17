@@ -1,10 +1,13 @@
 import React from 'react';
-import { Button } from 'antd';
-import './App.css';
+import { Routes } from './router';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
-  return <div>
-    <Button>test</Button>
-  </div>;
+  return (
+    <BrowserRouter>
+      <Routes />
+    </BrowserRouter>
+  );
 }
+
 export default App;
