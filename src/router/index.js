@@ -3,10 +3,10 @@ import { Route, Switch } from 'react-router-dom';
 
 import MainLayoutRoute from '../containers/layouts/Main';
 
-import NotFound from '../containers/pages/NotFound';
-import Root from '../containers/pages/Root';
-import Chats from '../containers/pages/Chats';
-import Chat from '../containers/pages/Chat';
+import NotFound from '@/containers/pages/NotFound';
+import Root from '@/containers/pages/Root';
+import Chats from '@/containers/pages/Chats';
+import Chat from '@/containers/pages/Chat';
 
 export const Routes = () => {
   return (
