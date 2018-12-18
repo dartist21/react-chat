@@ -1,5 +1,18 @@
 import React from 'react';
+import styled from 'styled-components';
 
-const Root = () => <div>root</div>;
+import Button from '../../../components/Button';
+
+const StyledRoot = styled.div`
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+`;
+
+const Root = () => (
+  <StyledRoot>
+    <Button type="primary">Join chats</Button>
+  </StyledRoot>
+);
 
 export default Root;
