@@ -11,7 +11,9 @@ const StyledRoot = styled.div`
 
 const Root = () => (
   <StyledRoot>
-    <Button type="primary">Join chats</Button>
+    <Button to="/chat" type="primary">
+      Join chats
+    </Button>
   </StyledRoot>
 );
 
