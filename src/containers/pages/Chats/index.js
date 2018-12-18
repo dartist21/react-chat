@@ -1,7 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import styled from 'styled-components';
 
-import Button from '@/components/Button/';
+import ChatList from '@/components/ChatList/';
 
 import { fetchChats } from '@/redux/data/chats';
 import { getChats } from '@/redux';
@@ -16,13 +17,8 @@ export class Chats extends React.Component {
     const { chats } = this.props;
     return (
       <div>
-        Chat list:
-        {chats.map(chat => (
-          <div key={chat.id}>
-            {chat.title} –
-            <Button to={`/chat/${chat.id}`}> Chat #{chat.id}</Button>
-          </div>
-        ))}
+        <h1>Chat list</h1>
+        <ChatList items={chats} />
       </div>
     );
   }
